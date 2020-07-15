@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Roboto:wght@400;500&display=swap");
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    color: white;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),url('../img/landing\ Page.png');
+    background-position: center;
+    width: 100%;
+}
+.succ {
+    width: 250px;
+    height: 100px;
+    background: #50ce54;
+    position: absolute;
+    z-index: 999999999999;
+    top: 20px;
+    right: 20px;
+    font-family: cursive;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: -1px -1px 17px 3px rgba(182, 218, 159, 0.63);
+}
+#one{
+    display: none;
+}
+#two{
+    display: none;
+}
+.succ p{
+    display: inline;
+}
+.warn {
+    width: 250px;
+    height: 100px;
+    background: #f5f11df1;
+    position: absolute;
+    z-index: 999999999999;
+    top: 20px;
+    right: 20px;
+    font-family: cursive;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: -1px -1px 17px 3px rgba(238, 240, 144, 0.63);
+}
+.warn p{
+    display: inline;
+}
+.dang {
+    width: 250px;
+    height: 100px;
+    background: #f51d1df1;
+    position: absolute;
+    z-index: 999999999999;
+    top: 20px;
+    right: 20px;
+    font-family: cursive;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: -1px -1px 17px 3px rgba(238, 137, 137, 0.63);
+}
+.dang p{
+    display: inline;
+}
+#three{
+    display: none;
+}
+
+
+
+.container-fluid {
+    margin: auto;
+    overflow: hidden;
+}
+
+.container {
+    box-sizing: border-box;
+    margin: auto;
+    overflow: hidden;
+}
+
+.sweet{
+    color: yellow;
+    font-family: sans-serif;
+}
+.sec{
+    color: black;
+    margin: 100px auto !important;
+}
+
+.sec h1{
+    color:black; 
+    font-style: normal;
+font-weight: bold;
+font-size:35px;
+margin-bottom:20px;
+}
+.sec p{
+    font-size:18px;
+line-height: 20px;
+color: #191919;
+}
+
+.btn-danger {
+    background:yellow;
+    border: none;
+    border-radius:  10px;
+    font-weight: 500;
+    box-shadow: 1px 2px 5px 0px rgb(32, 32, 32);
+    color: gray;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid yellow;
+    padding: 6px;
+    background: transparent;
+    width:50%;
+    border-radius: 0;
+}
+input::placeholder{
+    color: white;
+    font-weight: 600;
+    font-style: italic;
+}
+input:focus{
+    color: yellow;
+    font-style: italic;
+}
+
+.head button {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+.input-wrap{
+    display: flex;
+    justify-content: stretch;
+    box-sizing: border-box;
+    margin-top:30px;
+}
+.mon h1{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46.9591px;
+    color:black;
+}
+.mon h3{
+    font-family:  sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+.o{
+    text-align: right;
+}
+
+.com{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.com img{
+    margin: 10px 15px;
+    width: 20px;
+    height: 20px;
+}
+.art h1{
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+}
+.art{
+    text-align: center;
+}
+
+.side h1{
+    font-family: Muli;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height:normal;
+}
+
+.copy{
+    text-align: center;
+    color: #f8f7f694;
+    background: black;
+    padding:15px;
+    font-weight: 500;
+    margin-top:20px;
+    width: 100%;
+}
+
+.lind{
+
+    padding: 43px;
+}
+.lind i{
+    color: rgba(128, 128, 128, 0.523);
+    font-size: 40px;
+}
+.link-wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+
+img{
+    position: center;
+}
+
+.row > .column {
+    padding: 0 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Create four equal columns that floats next to eachother */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.752);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color:transparent;
+    border: none;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    height: 80vh;
+    max-width: 1200px;
+    align-content: center;
+    text-align: center;
+  }
+  .modal-content img{
+    width: 300px !important;
+    height: 520px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  .inner img{
+      width: 300px;
+      height: 300px;
+      margin-top:20px;
+  }
+  img.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  .image1{
+      position: relative;
+      top: -250px;
+      right:100px;
+  }
+  @media(max-width: 900px){
+    .o{
+        text-align: center;
+    }
+    .inner img{
+        width: 250px;
+        height: 250px;
+    }
+    .art img{
+        margin: 10px auto;
+    }
+    .lind{
+        padding: 10px;
+    }
+    .lind i{
+        font-size: 20px;
+    }
+    section{
+        text-align: center;
+        align-items: center;
+    }
+    .mon h1{
+        font-size: 22px;
+    }
+    .mon h3{
+        font-size: 15px;
+    }
+    .on img{
+        width:220px;
+    }
+    .or{
+    display: none;
+    }
+    .com h5{
+        font-size: 15px;
+    }
+    .com img{
+        width: 15px;
+        height: 15px;
+    }
+    .sec h1{
+        font-size: 22px;
+        margin-top:20px;
+    }
+    .sec p{
+        font-size: 15px;
+    }
+    .sec li{
+        font-size: 15px;
+    }
+    .sub-wrap .col-xs-6{
+        width: 50%;
+    }
+    .sub-wrap .col-xs-6 ul{
+        padding: 0;
+    }
+    .fut h3{
+        font-size: 15px;
+    }
+    .fut{
+        display: inline;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
