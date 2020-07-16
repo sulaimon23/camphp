@@ -2,8 +2,7 @@
 
 html {
     scroll-behavior: smooth;
-    box-sizing: border-box;
-    overflow-x: hidden;
+ 
 }
 
 * {
@@ -16,9 +15,8 @@ body {
     height: 100vh;
     box-sizing: border-box;
     font-family: sans-serif;
-    background:linear-gradient(to right, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),url('../img/landing\ Page.png');
+    background:url('../img/landing\ Page.png');
     background-position: center;
-    width: 100%;
 }
 .succ {
     width: 250px;
@@ -36,12 +34,7 @@ body {
     border-radius: 20px;
     box-shadow: -1px -1px 17px 3px rgba(182, 218, 159, 0.63);
 }
-#one{
-    display: none;
-}
-#two{
-    display: none;
-}
+
 .succ p{
     display: inline;
 }
@@ -83,9 +76,6 @@ body {
 .dang p{
     display: inline;
 }
-#three{
-    display: none;
-}
 
 
 
@@ -106,7 +96,7 @@ body {
 }
 .sec{
     color: black;
-    margin: 100px auto !important;
+    margin: 50px auto !important;
 }
 
 .sec h1{
@@ -139,7 +129,7 @@ input{
     border-bottom: 2px solid yellow;
     padding: 6px;
     background: transparent;
-    width:50%;
+    width:83%;
     border-radius: 0;
 }
 input::placeholder{
@@ -161,6 +151,10 @@ input:focus{
     justify-content: stretch;
     box-sizing: border-box;
     margin-top:30px;
+    width: 100%;
+}
+.mon{
+    margin-top:50px !important;
 }
 .mon h1{
     font-family: sans-serif;
@@ -378,6 +372,12 @@ img{
     .o{
         text-align: center;
     }
+    .sec{
+        margin: 20px auto;
+    }
+    .head{
+        text-align: center;
+    }
     .inner img{
         width: 250px;
         height: 250px;
@@ -395,6 +395,9 @@ img{
         text-align: center;
         align-items: center;
     }
+    .mon{
+        margin-top: 40px !important;
+    }
     .mon h1{
         font-size: 22px;
     }
@@ -406,6 +409,9 @@ img{
     }
     .or{
     display: none;
+    }
+    .o{
+        text-align: center;
     }
     .com h5{
         font-size: 15px;

@@ -1,6 +1,6 @@
 <?php
 
-$conn = new mysqli('localhost', 'root', '', 'charge');
+$conn = new mysqli('localhost', 'root', '', 'cam');
 if (!$conn) {
  die('error');
 }
