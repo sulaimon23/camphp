@@ -4,7 +4,7 @@ include 'db.php';
  if(isset($_POST['submit-btn'])){
   $email = $_POST['email'];
 
-  $query = $conn->query("SELECT * from cam where email='$email'");
+  $query = $conn->query("SELECT * from cam   where email='$email'");
 
   $numrows = $query->num_rows;
 
@@ -13,14 +13,16 @@ include 'db.php';
     if($sql){
       $error = "<div class='succ wow slideInDown slow ' id='one'>
       <div>
+        <h1 id='can'>&times;</h1>
         <i class='fa fa-check-circle'></i>
       <p>Subscribed</p>
       </div>  
     </div>";
       
     }else{ 
-      $error = "<div class='dang wow slideInDown slow ' id='three'>
+      $error = "<div class='dang wow slideInDown slow ' id='one'>
       <div>
+        <h1 id='can'>&times;</h1>
         <i class='fa fa-close'></i>
       <p>An Error occured</p>
       </div>  
@@ -28,8 +30,9 @@ include 'db.php';
       
     }
   }else{
-    $error = "<div class='warn wow slideInDown slow ' id='two'>
+    $error = "<div class='warn wow slideInDown slow ' id='one'>
       <div>
+        <h1 id='can'>&times;</h1>
         <i class='fa fa-exclamation-triangle'></i>
       <p>Email already Exist</p>
       </div>  
@@ -60,9 +63,12 @@ include 'db.php';
 <body>
 
   <div class="container-fluid head">
-    <div class="container m-auto">
-      <div class="col-md-12 on">
+    <div class="container m-auto ov">
+      <div class="on">
         <img src="./assets/img/News Cam.png" alt="">
+      </div>
+      <div>
+        <img src="./assets/img/logo-icon.png" class="ik" alt="">
       </div>
     </div>
     <div class="container my-1 mon">
@@ -76,7 +82,7 @@ include 'db.php';
             <form action="" method="Post">
               <div class="input-wrap">
                 <input type="text" placeholder="Email Us" name="email">
-                <button class="btn btn-danger" name="submit-btn">Try it for free</button>
+                <button class="btn btn-danger" name="submit-btn">Try us</button>
               </div>
             </form>
           </div>

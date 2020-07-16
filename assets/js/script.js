@@ -1,3 +1,13 @@
+
+
+let can = document.getElementById('can').addEventListener('click', e => {
+  let one = document.getElementById('one')
+  one.style.display = "none";
+  console.log('hey')
+})
+
+
+
 function openModal() {
   document.getElementById("myModal").style.display = "block";
 }
@@ -5,7 +15,11 @@ function openModal() {
 // Close the Modal
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
-}
+};
+
+
+
+
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -37,3 +51,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+
+
