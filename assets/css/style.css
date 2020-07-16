@@ -42,7 +42,9 @@ body {
     border-radius: 20px;
     box-shadow: -1px -1px 17px 3px rgba(182, 218, 159, 0.63);
 }
-
+p{
+    color:#25282b;
+}
 .succ p{
     display: inline;
 }
@@ -99,7 +101,7 @@ body {
 }
 
 .sweet{
-    color: yellow;
+    color: #f2c94c;
     font-family: sans-serif;
 }
 .sec{
@@ -117,24 +119,28 @@ margin-bottom:20px;
 .sec p{
     font-size:18px;
 line-height: 20px;
-color: #191919;
+color:#25282b;
 }
 
 .btn-danger {
-    background:yellow;
+    background:#f2c94c;
     border: none;
     border-radius:  10px;
     font-weight: 500;
     box-shadow: 1px 2px 5px 0px rgb(32, 32, 32);
-    color: gray;
+    color: white;
     font-size: 12px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
+.btn-danger:hover{
+    color:#f2c94c;
+    background:transparent;
+}
 input{
     border: none;
     outline: none;
-    border-bottom: 2px solid yellow;
+    border-bottom: 2px solid #f2c94c;
     padding: 6px;
     background: transparent;
     width:83%;
@@ -146,12 +152,12 @@ input:focus{
     background: transparent;
 }
 input::placeholder{
-    color: white;
+    color:#25282b;
     font-weight: 600;
     font-style: italic;
 }
 input:focus{
-    color: yellow;
+    color:#25282b;
     font-style: italic;
 }
 
@@ -365,10 +371,13 @@ img{
     padding: 2px 16px;
     color: white;
   }
-  .inner img{
-      width: 300px;
-      height: 300px;
-      margin-top:20px;
+  .inner{
+      background:url('../img/Group\ 8.png');
+      background-size:contain;
+      background-position:center;
+      background-repeat:no-repeat;
+      height:300px;
+      width: 100%;
   }
   img.demo {
     opacity: 0.6;

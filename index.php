@@ -60,6 +60,7 @@ include 'db.php';
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
+
 <body>
 
   <div class="container-fluid head">
@@ -89,7 +90,7 @@ include 'db.php';
         </div>
         <div class="col-md-5 wow fadeInDown">
           <div class="inner">
-           <img src="./assets/img/Group 8.png" alt="">
+           
           </div>
         </div>
       </div>
@@ -107,14 +108,14 @@ include 'db.php';
   ?>
 
 
-  <section class="container sec o">
+  <section class="container sec ">
     <div class="row">
       <div class="col-md-5 wow fadeInDown">
         <div>
           <img src="./assets/img/Group 625.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
         </div>
       </div>
-      <div class="col-md-7 my-auto align-self-center wow fadeInDown ">
+      <div class="col-md-7 my-a o uto align-self-center wow fadeInDown ">
         <h1>Get <span class="sweet">Started</span> </h1>
         <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum lorem ipsum is simply free text dolore
          .</p>
@@ -131,7 +132,7 @@ include 'db.php';
         <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum lorem ipsum is simply free text dolore
           eu fugiat nulla pariatur. </p>
       </div>
-      <div class="col-md-5 wow fadeInUp">
+      <div class="col-md-5 wow fadeInUp o">
         <div>
           <img src="./assets/img/Yellow.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
         </div>
@@ -148,15 +149,15 @@ include 'db.php';
   </section>
 
   <section>
-   <div class="cotainer art">
+   <div class="container art">
     <div class="row">
      <div class="col-sm-4 col-md-4">
       <h1>Place a <span class="sweet">video</span></h1>
-      <img src="./assets/img/Yellow(4).png" alt="">
+      <img src="./assets/img/Yellow(1).png" alt="">
      </div>
      <div class="col-sm-4 col-md-4">
       <h1>Auto generate <span class="sweet">article</span></h1>
-      <img src="./assets/img/Yellow(1).png" alt="">
+      <img src="./assets/img/Yellow(3).png" alt="">
      </div>
      <div class="col-sm-4 col-md-4">
       <h1><span class="sweet">Edit</span> and <span class="sweet">publish</span> article</h1>
@@ -167,14 +168,14 @@ include 'db.php';
   </section>
 
 
-  <section class="container sec sid o">
+  <section class="container sec sid ">
     <div class="row">
       <div class="col-md-5 wow fadeInUp">
         <div>
           <img src="./assets/img/Yellow(4).png" onclick="openModal();currentSlide(3)">
         </div>
       </div>
-      <div class="col-md-7 my-auto align-self-center wow fadeInUp">
+      <div class="col-md-7 my-auto  o align-self-center wow fadeInUp">
         <h1> Generate Facial<br> <span class="sweet">Recognition</span> Data</h1>
         <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum lorem ipsr.</p>
       </div>
@@ -187,9 +188,9 @@ include 'db.php';
        <h1> Join Community<br> for<span class="sweet">Projects</span> Collaboration, Crowd<span class="sweet"> Funding</span> Crowd<span class="sweet"> Sorting</span> </h1>
        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum lorem ipsr.</p>
      </div>
-     <div class="col-md-5 wow fadeInUp">
+     <div class="col-md-5 wow fadeInUp o">
       <div>
-        <img src="./assets/img/Yellow(6).png" onclick="openModal();currentSlide(3)">
+        <img src="./assets/img/Yellow(6).png" onclick="openModal();currentSlide(4)">
       </div>
 
       <img src="./assets/img/Image (2).png" alt="" class="image1 animated swing infinite">
@@ -199,14 +200,14 @@ include 'db.php';
  </section>
 
 
- <section class="container sec sid o">
+ <section class="container sec sid ">
   <div class="row">
     <div class="col-md-5 wow fadeInUp">
       <div>
-        <img src="./assets/img/Yellow(5).png" onclick="openModal();currentSlide(3)">
+        <img src="./assets/img/Yellow(5).png" onclick="openModal();currentSlide(5)">
       </div>
     </div>
-    <div class="col-md-7 my-auto align-self-center wow fadeInUp">
+    <div class="col-md-7 my-auto a o lign-self-center wow fadeInUp">
       <h1>Share your Unique<br> <span class="sweet">Identity</span> to the world</h1>
       <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum lorem ipsr.</p>
     </div>
@@ -231,16 +232,16 @@ include 'db.php';
 
       <div class="mySlides">
         <div class="numbertext">3 / 5</div>
-        <img src="./assets/img/Yellow(8).png" style="width:100%">
+        <img src="./assets/img/Yellow(4).png" style="width:100%">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">4 / 5</div>
-        <img src="./assets/img/Yellow(9).png" style="width:100%">
+        <img src="./assets/img/Yellow(6).png" style="width:100%">
       </div>
       <div class="mySlides">
         <div class="numbertext">5 / 5</div>
-        <img src="./assets/img/Yellow(9).png" style="width:100%">
+        <img src="./assets/img/Yellow(5).png" style="width:100%">
       </div>
 
       <!-- Next/previous controls -->
@@ -266,7 +267,7 @@ include 'db.php';
    
     
   </div>
-  <div class="container-fluid copy wow fadeInDown">
+  <div class="container-fluid copy ">
    Copyright &copy; 2020
  </div>
 
