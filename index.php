@@ -66,10 +66,10 @@ include 'db.php';
   <div class="container-fluid head">
     <div class="container m-auto ov">
       <div class="on">
-        <img src="./assets/img/News Cam.png" alt="">
+        <!-- <img src="./assets/img/News Cam.png" alt=""> -->
       </div>
       <div>
-        <img src="./assets/img/logo-icon.png" class="ik" alt="">
+        <!-- <img src="./assets/img/logo-icon.png" class="ik" alt=""> -->
       </div>
     </div>
     <div class="container my-1 mon">
