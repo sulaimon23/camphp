@@ -1,292 +1,70 @@
- <?php
 
-include 'db.php';
- if(isset($_POST['submit-btn'])){
-  $email = $_POST['email'];
-
-  $query = $conn->query("SELECT * from cam   where email='$email'");
-
-  $numrows = $query->num_rows;
-
-  if($numrows == 0){
-    $sql = $conn->query("INSERT INTO cam(email) VALUES ('$email')");
-    if($sql){
-      $error = "<div class='succ wow slideInDown slow ' id='one'>
-      <div>
-        <h1 id='can'>&times;</h1>
-        <i class='fa fa-check-circle'></i>
-      <p>Subscribed</p>
-      </div>  
-    </div>";
-      
-    }else{ 
-      $error = "<div class='dang wow slideInDown slow ' id='one'>
-      <div>
-        <h1 id='can'>&times;</h1>
-        <i class='fa fa-close'></i>
-      <p>An Error occured</p>
-      </div>  
-    </div>";
-      
-    }
-  }else{
-    $error = "<div class='warn wow slideInDown slow ' id='one'>
-      <div>
-        <h1 id='can'>&times;</h1>
-        <i class='fa fa-exclamation-triangle'></i>
-      <p>Email already Exist</p>
-      </div>  
-    </div>";
-  }
-
- }
- ?>  
-
-
-  
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./files/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="wrapper">
+        <div class="row w-100">
+          <div class="col-xs-12 col-md-5 col-lg-6 nopadding">
+            <div class="left_con">
+              <div class="app">
+                <p>
+                  Welcome to
+                  <img src="./img/remark_logo_main 2.svg" />
+                </p>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News || cam</title>
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-  <link rel="stylesheet" href="./assets/css/animate.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-
-
-<body>
-
-  <div class="container-fluid head">
-    <div class="container m-auto ov">
-      <div class="on">
-        <img src="./assets/img/News Cam.png" alt="">
-      </div>
-      <div>
-        <img src="./assets/img/logo-icon.png" class="ik" alt="">
-      </div>
-    </div>
-    <div class="container my-1 mon">
-      <div class="row">
-        <div class="col-md-7 my-auto align-self-center wow fadeInDown">
-          <div class="mb-3">
-            <!-- <h1>Take article <span class="sweet">Creation</span><br>to the next level</h1> -->
-          </div>
-          <div class="my-1">
-            <h3>The multichannel sales angagement platform, which automates email outreach, calls and tast. while focusing on what really matters</h3>
-            <form action="" method="Post">
-              <div class="input-wrap">
-                <input type="text" placeholder="Email Us" name="email">
-                <button class="btn btn-danger" name="submit-btn">Try us</button>
+                <div class="info_text" id="t2">
+                  <img src="./img/remark_m_mark_iceblue 1.svg" />
+                  <h1>
+                    We are a <span class="gray">Social Media</span>
+                    <span class="blue"> Marketing</span>
+                    <span class="gray"> Agency</span> based in Lagos, Nigeria.
+                  </h1>
+                  <div class="but">
+                    <a href="./files/second.html">
+                      <button class="btn bot w-100">
+                        We can help! GET IN TOUCH
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <h5 class="foot" id="w1">&copy;2021 Remark Social</h5>
               </div>
-            </form>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-6 nopadding">
+            <div class="right_con">
+              <div style="display: block">
+                <img src="./img/Ellipse 3.svg" alt="logo" />
+                <p class="follow">Follow our story</p>
+
+                <div class="icons">
+                  <i class="fa fa-facebook-f"></i>
+                  <i class="fa fa-play"></i>
+                  <i class="fa fa-instagram"></i>
+                  <i class="fa fa-linkedin"></i>
+                </div>
+                <h5 class="foot" id="w2">&copy;2021 Remark Social</h5>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-5 wow fadeInDown">
-          <div class="inner">
-           
-          </div>
-        </div>
       </div>
     </div>
-  </div>
-
-
-
-  <?php
-
-    if(isset($error)){
-      echo $error;
-    }
-
-  ?>
-
-
-  <section class="container sec ">
-    <div class="row">
-      <div class="col-md-5 wow fadeInDown">
-        <div>
-          <img src="./assets/img/Group 625.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
-        </div>
-      </div>
-      <div class="col-md-7 my-a o uto align-self-center wow fadeInDown ">
-        <h1>Get <span class="sweet">Started</span> </h1>
-        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum lorem ipsum is simply free text dolore
-         .</p>
-      </div>
-    </div>
-  </section>
-
-
-
-  <section class="container sec sid">
-    <div class="row">
-      <div class="col-md-7 my-auto align-self-center wow fadeInUp">
-        <h1>Begin your journey<br> of <span class="sweet">Self-Publishing</span></h1>
-        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum lorem ipsum is simply free text dolore
-          eu fugiat nulla pariatur. </p>
-      </div>
-      <div class="col-md-5 wow fadeInUp o">
-        <div>
-          <img src="./assets/img/Yellow.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="container sec">
-   <center>
-    <h1>Publish your Article in <span class="sweet">3 easy steps</span></h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum commodi neque repellat quod quae.</p>
-   </center>
-  </section>
-
-  <section>
-   <div class="container art">
-    <div class="row">
-     <div class="col-sm-4 col-md-4">
-      <h1>Place a <span class="sweet">video</span></h1>
-      <img src="./assets/img/Yellow(1).png" alt="">
-     </div>
-     <div class="col-sm-4 col-md-4">
-      <h1>Auto generate <span class="sweet">article</span></h1>
-      <img src="./assets/img/Yellow(3).png" alt="">
-     </div>
-     <div class="col-sm-4 col-md-4">
-      <h1><span class="sweet">Edit</span> and <span class="sweet">publish</span> article</h1>
-      <img src="./assets/img/Yellow(6).png" alt="">
-     </div>
-    </div>
-   </div>
-  </section>
-
-
-  <section class="container sec sid ">
-    <div class="row">
-      <div class="col-md-5 wow fadeInUp">
-        <div>
-          <img src="./assets/img/Yellow(4).png" onclick="openModal();currentSlide(3)">
-        </div>
-      </div>
-      <div class="col-md-7 my-auto  o align-self-center wow fadeInUp">
-        <h1> Generate Facial<br> <span class="sweet">Recognition</span> Data</h1>
-        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum lorem ipsr.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="container sec sid">
-   <div class="row">
-     <div class="col-md-7 my-auto align-self-center wow fadeInUp">
-       <h1> Join Community<br> for<span class="sweet">Projects</span> Collaboration, Crowd<span class="sweet"> Funding</span> Crowd<span class="sweet"> Sorting</span> </h1>
-       <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum lorem ipsr.</p>
-     </div>
-     <div class="col-md-5 wow fadeInUp o">
-      <div>
-        <img src="./assets/img/Yellow(6).png" onclick="openModal();currentSlide(4)">
-      </div>
-
-      <img src="./assets/img/Image (2).png" alt="" class="image1 animated swing infinite">
-      <img src="./assets/img/Image.png" alt="" class="image2 animated pulse infinite">
-    </div>
-   </div>
- </section>
-
-
- <section class="container sec sid ">
-  <div class="row">
-    <div class="col-md-5 wow fadeInUp">
-      <div>
-        <img src="./assets/img/Yellow(5).png" onclick="openModal();currentSlide(5)">
-      </div>
-    </div>
-    <div class="col-md-7 my-auto a o lign-self-center wow fadeInUp">
-      <h1>Share your Unique<br> <span class="sweet">Identity</span> to the world</h1>
-      <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum lorem ipsr.</p>
-    </div>
-  </div>
-</section>
-
-  <!-- The Modal/Lightbox -->
-
-  <div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="modal-content">
-
-      <div class="mySlides">
-        <div class="numbertext">1 / 5</div>
-        <img src="./assets/img/Group 625.png" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">2 / 5</div>
-        <img src="./assets/img/Yellow.png" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">3 / 5</div>
-        <img src="./assets/img/Yellow(4).png" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">4 / 5</div>
-        <img src="./assets/img/Yellow(6).png" style="width:100%">
-      </div>
-      <div class="mySlides">
-        <div class="numbertext">5 / 5</div>
-        <img src="./assets/img/Yellow(5).png" style="width:100%">
-      </div>
-
-      <!-- Next/previous controls -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-  </div>
-
-
-
-
-  <div class="container-fluid lind">
-    <div class="container">
-      <div class="link-wrap">
-        <i class="fa fa-windows"></i>
-        <i class="fa fa-amazon"></i>
-        <i class="fa fa-apple"></i>
-        <i class="fa fa-android"></i>
-      </div>
-    </div>
-  </div>
- 
-   
-    
-  </div>
-  <div class="container-fluid copy ">
-   Copyright &copy; 2020
- </div>
-
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
-  <script src="https ://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-  </script>
-  <script src="./assets/js/wow.js"></script>
-  <script src="./assets/js/script.js"></script>
-  <script>
-    new WOW().init();
-  </script>
-
-</body>
-
+  </body>
 </html>
