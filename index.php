@@ -66,17 +66,17 @@ include 'db.php';
   <div class="container-fluid head">
     <div class="container m-auto ov">
       <div class="on">
-        <!-- <img src="./assets/img/News Cam.png" alt=""> -->
+        <img src="./assets/img/News Cam.png" alt="">
       </div>
       <div>
-        <!-- <img src="./assets/img/logo-icon.png" class="ik" alt=""> -->
+        <img src="./assets/img/logo-icon.png" class="ik" alt="">
       </div>
     </div>
     <div class="container my-1 mon">
       <div class="row">
         <div class="col-md-7 my-auto align-self-center wow fadeInDown">
           <div class="mb-3">
-            <h1>Take article <span class="sweet">Creation</span><br>to the next level</h1>
+            <!-- <h1>Take article <span class="sweet">Creation</span><br>to the next level</h1> -->
           </div>
           <div class="my-1">
             <h3>The multichannel sales angagement platform, which automates email outreach, calls and tast. while focusing on what really matters</h3>
