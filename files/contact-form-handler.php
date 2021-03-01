@@ -29,11 +29,10 @@ if( empty($errors))
 	$email_body = "You have received a new message. ".
 	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message"; 
 	
-	$headers = "From: $myemail\n"; 
+	$headers .= "From: $myemail\n"; 
 	$headers .= "Reply-To: $email_address";
 	$headers  = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/html; charset=UTF-8\r\n";
-$headers .= "From: <".$from. ">" 
 	
 	mail($to,$email_subject,$email_body,$headers);
 	//redirect to the 'thank you' page
