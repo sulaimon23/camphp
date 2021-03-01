@@ -30,12 +30,12 @@ if( empty($errors))
 	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message"; 
 
 
-	$headers = array(
-		'From' => $myemail,
-		'Reply-To' => $email_address,
-		'X-Mailer' => 'PHP/' . phpversion()
-	);
 	
+	
+	$headers .= "From: $myemail"; 
+	$headers .= "Reply-To: $email_address";
+	$headers  = "MIME-Version: 1.0\r\n";
+$headers .= "Content-type: text/html; charset=UTF-8\r\n";
 	
 	mail($to,$email_subject,$email_body,$headers);
 	//redirect to the 'thank you' page
