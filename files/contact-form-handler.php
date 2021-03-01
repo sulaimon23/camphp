@@ -1,6 +1,6 @@
 <?php 
 $errors = '';
-$myemail = 'tsulaimon96@gmail.com';//<-----Put Your email address here.
+$myemail = 'tsulaimon21@yahoo.com';//<-----Put Your email address here.
 if(empty($_POST['name'])  || 
    empty($_POST['email']) || 
    empty($_POST['phone']) || 
@@ -13,7 +13,6 @@ $name = $_POST['name'];
 $email_address = $_POST['email']; 
 $phone = $_POST['phone']; 
 $message = $_POST['message']; 
-$from = "tsulaimon21@yahoo.com";
 
 if (!preg_match(
 "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
@@ -28,14 +27,9 @@ if( empty($errors))
 	$email_subject = "Contact form submission: $name";
 	$email_body = "You have received a new message. ".
 	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message"; 
-
-
 	
-	
-	$headers .= "From: $myemail"; 
+	$headers = "From: $myemail\n"; 
 	$headers .= "Reply-To: $email_address";
-	$headers  = "MIME-Version: 1.0\r\n";
-$headers .= "Content-type: text/html; charset=UTF-8\r\n";
 	
 	mail($to,$email_subject,$email_body,$headers);
 	//redirect to the 'thank you' page
